@@ -20,6 +20,7 @@ To read more about using these font, please visit the Next.js documentation:
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export function Clientcomponent() {
   return (
@@ -62,6 +63,12 @@ export function Clientcomponent() {
           Sign Up
         </Button>
       </form>
+      <p>Already an user? 
+        <Link href='/clients/login'>
+        <span className="text-blue-500"> Login Now!</span>
+
+        </Link>
+        </p>
     </div>)
   );
 }

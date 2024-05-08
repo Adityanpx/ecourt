@@ -2,7 +2,7 @@
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-
+import Link from "next/link";
 export function LabRegister() {
   return (
     (<div className="mx-auto max-w-md space-y-6 py-12">
@@ -22,6 +22,12 @@ export function LabRegister() {
         <Button className="w-full" type="submit">
           Sign Up
         </Button>
+        <p>Already an user? 
+        <Link href='/forensic/login'>
+        <span className="text-blue-500"> Login Now!</span>
+
+        </Link>
+        </p>
       </form>
     </div>)
   );
